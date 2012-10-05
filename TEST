@@ -1,0 +1,4 @@
+$ cd Default/Runner
+$ ruby19 main.rb Gtk3
+
+Code above runs `Gtk3'

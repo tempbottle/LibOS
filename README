@@ -1,0 +1,76 @@
+LibOS - a FreeBSD-based, LLVM-based OS (just an example)
+========================================================
+An example shows how LibOS works.
+
+HIER
+====
+For more details, see README under the directory which 
+you are interested in.
+
+/                           <-- rootfs
+
+/LibOS                      <-- cwd
+|- Applications/            <-- apps installed here
+   |- Hello/                <-- a simple hello world program 
+                                (calls system-wide library)
+   |- Gtk3/                 <-- a GTK3-based hello world program 
+                                (calls userland library)
+|- Default/                 <-- default programs, installed by default
+|- Config/                  <-- the same as /etc, the system will 
+                                write conf back to /etc
+|- Libraries/               <-- non-sys, only for apps, libraries
+   |- Msg                   <-- print a boring hello world program
+   |- Headers               <-- stores a lib's headers, this shouldn't
+                                be seen in end-users' eyes.
+|- System/                  <-- LibOS core
+|- Users/                   <-- the same as /home, could be read and 
+                                written by users, or just drop this dir??
+
+LICENSE
+=======
+Currently, 2-clause BSD license.
+
+WHAT DOES "LIBOS" MEAN?
+=======================
+/laibos/, libre operating system.
+
+WHAT DOES "EXAMPLE" MEAN?
+=========================
+The LibOS implementation is still experimental.
+
+If this implementation of LibOS grows fast, it
+may be a real product. :-)
+
+WHAT DOES "RUBY-POWERED" MEAN?
+==============================
+You can install a whole LibOS environment on any platforms that 
+LLVM and Ruby support.
+
+WHAT DOES "LLVM-BASED" MEAN?
+============================
+All of its applications are cross-platform!
+
+WHAT DOES "FREEBSD-BASED" MEAN?
+===============================
+LibOS provides a full working environment out of box.
+You can start your work even you're out of LibOS itself.
+
+NOTES
+=====
+* Only GTK+ and its friends (including Clutter, Mx)
+  are supported.
+* Only FreeBSD is supported.
+
+Other support could be provided by joining the 
+SupGroup.
+
+You'd better not use C++-based library, because the ABI may be different 
+across machines!
+
+PROBLEMS
+========
+Well.. Sorry but you must make a directory in /LibOS right now.
+
+You can do it by running:
+# mkdir /LibOS
+# chown [YourUserName] /LibOS

@@ -1,0 +1,10 @@
+hier: Applications/ - userland applications
+===========================================
+Place your own applications here. ;-)
+
+A normal file system layout:
+
+Applications/
+|- YourProgram
+   |- Meta.rb
+   |- [other files]

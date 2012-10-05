@@ -1,0 +1,7 @@
+hier: System/ - Core of LibOS
+=============================
+The core is fully written in Ruby 1.9.
+
+config.rb         - configuration for the core
+lib.rb            - library path expander
+meta.rb           - metadata class

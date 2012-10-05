@@ -1,0 +1,17 @@
+TODO - a TODO List
+==================
+System/:
+    * support new filesystem layout
+    * permissions
+    * support userland lib's external libs
+
+Libraries/:
+    * Msg             - example for userland program
+
+Applcations/:
+    * Hello           - calls msg to say "hello world"
+
+Default/:
+    * Runner: let it work with Default
+    * Lister: TODO, list all installed program
+    * Console: TODO, a console
